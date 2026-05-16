@@ -105,3 +105,47 @@ switch (pasajero.usuario) {
   default:
     console.log('Usuario no valido');
 }
+
+
+// Ejercicio 2 — Menú de restaurante
+
+//Un restaurante tiene las siguientes opciones:
+
+//"hamburguesa" → cuesta $18.000
+//"pizza" → cuesta $25.000
+//"perro" → cuesta $12.000
+//Otra opción → mostrar "Producto no disponible"
+
+//Además, si el cliente compra más de $20.000 debe recibir un mensaje de:
+//Aplica para bebida gratis
+
+//Datos iniciales
+let producto1 = 'mandingas';
+let precio = 0;
+
+switch (producto1) {
+  case 'hamburguesa':
+    //hacemos aplicacion
+    precio = 18000;
+    break;
+  case 'pizza':
+    //hacemos aplicacion
+    precio = 25000;
+    break;
+  case "mandingas":
+    precio = 22000;
+    break;
+  case 'perro':
+    //hacemos aplicacion
+    precio = 12000;
+    break;
+  default:
+    console.log('Producto no disponible');
+}
+
+console.log('El producto ', producto, "valor a pagar", precio);
+
+if (precio >= 20000) {
+  console.log('BEBIDA GRATIS');
+}
+
