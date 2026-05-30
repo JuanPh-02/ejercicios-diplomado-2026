@@ -95,10 +95,19 @@ while(contador <= 10) {
 //      FOR                                  WHILE
 // Se conoce cantidad de veces         No siempre se conoce
 // Mas estructurado                    Mas flexible
-//Muy usado para arrays                Muy usado para validaciones
+// Muy usado para arrays                Muy usado para validaciones
 
 
 
 // EJERCICIO EN PAREJAS O EQUIPO
 // debemos crear un array de numeros con minimo 5 numeros y 
 // debemos de sumar todos los numeros del array
+
+const numeros = [20, 45, 56];
+let sumaTotal = 0;
+
+for(let i=0; i < numeros.length; i++) {
+    sumaTotal += numeros[i];
+}
+
+console.log("La suma total es: ", sumaTotal)
