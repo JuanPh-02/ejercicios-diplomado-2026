@@ -122,7 +122,7 @@ console.log(mayores)
 // Crear un array con precios de productos y
 // generar uno nuevo con IVA (19%) 
 
-const precios = [12000, 34000, 56000, 60000]
+let precios = [12000, 34000, 56000, 60000]
 
 const preciosConIVA = precios.map(precio => precio * 1.19)
 
@@ -143,4 +143,65 @@ precios.forEach((precio, i) => console.log(precio, i))
 
 console.log(preciosConIVA)
 
+
+
+// EJERCICIO - filtrar los numeros pares y mostrarlos de a 1 por linea en consola
+
+const nums = [1,2,3,4,5,6,7,8,9,10,11,12]
+
+
+
+// EJERCICIO -  Se tiene un array de precios de productos y se debe de 
+// agregar el iva a los precios que sean mayores o iguales a 20000
+
+precios = [12000, 20000, 35000,  5000, 45500, 23500, 15000, 52500]
+
+let preciosMayores = precios.filter(precio => precio >= 20000);
+let preciosIVA = preciosMayores.map(precio => precio * 1.19) 
+console.log("Los precios con IVA:", preciosIVA)
+
+let preciosMayoresIVA = precios
+.filter(precio => precio >= 20000)
+.map(precio => precio * 1.19)
+
+console.log("Este es el nuevo", preciosMayoresIVA)
+
+// EJERCICIO - tenemos un array de notas y se debe de obtener las 
+// notas aprobadas, y convertirlas a porcentaje y mostrar el resultado
+
+const notas = [2.5, 4.0, 3.0, 3.5, 4.8, 5.0, 2.9]
+
+const notasFinalesPorcentajes = notas.filter(nota => nota >= 3).map(nota => nota * 20)
+
+notasFinalesPorcentajes.forEach(p => console.log(p + "%"))
+
+console.log(notasFinalesPorcentajes)
+
+
+// EJERCICIO - crear un array de productos con nombre, precio y stock,
+// Se deben mostrar solamente los productos con stock,
+// Crear un nuevo array con los productos
+
+// TAREA - poder modificar el precio directamente del objeto
+
+const productos = [
+    {nombre: "Maiz", precio: 5000, stock: 10},
+    {nombre: "Arroz", precio: 2800, stock: 0},
+    {nombre: "Papas", precio: 8000, stock: 5},
+    {nombre: "Trigo", precio: 4000, stock: 0}
+]
+
+let finales = productos.filter(p => p.stock > 0 ).map(p => p)
+
+console.log(finales)
+
+// Metodo find -  sirve para buscar un registro y devuelve el registro
+let encontrado = productos.find(pro => pro.nombre === "Lentejas")
+
+// Metodo findIndex -  sirve para buscar un registro y devuelve el indice en el que se encuentra
+let encontrado1 = productos.findIndex(pro => pro.nombre === "Arroz")
+
+console.log("resultado find", encontrado)
+console.log("resultado findIndex", encontrado1)
+console.log("resultado con indice", productos[encontrado1])
 
