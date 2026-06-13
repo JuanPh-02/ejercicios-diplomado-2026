@@ -193,7 +193,10 @@ const productos = [
 
 let finales = productos.filter(p => p.stock > 0 ).map(p => p)
 
-console.log(finales)
+let conIva = finales.map(pro => ({...pro, precio: pro.precio * 1.19 }))
+
+console.log("Productos filtrados", finales)
+console.log("Modificados con IVA", conIva)
 
 // Metodo find -  sirve para buscar un registro y devuelve el registro
 let encontrado = productos.find(pro => pro.nombre === "Lentejas")
