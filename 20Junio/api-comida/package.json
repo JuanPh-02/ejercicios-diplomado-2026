@@ -1,0 +1,20 @@
+{
+  "name": "api-comida",
+  "version": "1.0.0",
+  "description": "API para gestion de comida de restaurante",
+  "keywords": [
+    "api",
+    "restaurante",
+    "comida"
+  ],
+  "license": "ISC",
+  "author": "Juan Pablo Arroyave",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}
