@@ -1,0 +1,86 @@
+{
+  "comidas": [
+    {
+      "id": "1",
+      "nombre": "Bandeja Paisa",
+      "categoria": "Plato Típico",
+      "descripcion": "Plato tradicional colombiano con frijoles, arroz, carne molida, chicharrón, huevo y aguacate.",
+      "precio": 35000,
+      "imagen": "https://example.com/bandeja-paisa.jpg",
+      "disponible": true
+    },
+    {
+      "id": "2",
+      "nombre": "Hamburguesa Doble",
+      "categoria": "Comida Rápida",
+      "descripcion": "Hamburguesa con doble carne, queso cheddar, lechuga y tomate.",
+      "precio": 28000,
+      "imagen": "https://example.com/hamburguesa.jpg",
+      "disponible": true
+    },
+    {
+      "id": "3",
+      "nombre": "Pizza Hawaiana",
+      "categoria": "Pizza",
+      "descripcion": "Pizza con jamón, queso mozzarella y piña.",
+      "precio": 32000,
+      "imagen": "https://example.com/pizza-hawaiana.jpg",
+      "disponible": true
+    },
+    {
+      "id": "4",
+      "nombre": "Sushi Roll",
+      "categoria": "Comida Japonesa",
+      "descripcion": "Roll de salmón, aguacate y queso crema.",
+      "precio": 42000,
+      "imagen": "https://example.com/sushi-roll.jpg",
+      "disponible": true
+    },
+    {
+      "id": "5",
+      "nombre": "Tacos al Pastor",
+      "categoria": "Comida Mexicana",
+      "descripcion": "Tacos de cerdo marinado con piña y cilantro.",
+      "precio": 22000,
+      "imagen": "https://example.com/tacos.jpg",
+      "disponible": true
+    },
+    {
+      "id": "6",
+      "nombre": "Ensalada César",
+      "categoria": "Ensaladas",
+      "descripcion": "Lechuga romana, pollo, queso parmesano y aderezo César.",
+      "precio": 18000,
+      "imagen": "https://example.com/ensalada.jpg",
+      "disponible": true
+    },
+    {
+      "id": "7",
+      "nombre": "Lasaña Boloñesa",
+      "categoria": "Comida Italiana",
+      "descripcion": "Lasaña con carne, salsa boloñesa y queso gratinado.",
+      "precio": 30000,
+      "imagen": "https://example.com/lasana.jpg",
+      "disponible": false
+    },
+    {
+      "id": "8",
+      "nombre": "Pollo Broaster",
+      "categoria": "Pollo",
+      "descripcion": "Pollo crujiente acompañado de papas fritas.",
+      "precio": 25000,
+      "imagen": "https://example.com/pollo.jpg",
+      "disponible": true
+    },
+    {
+      "nombre": "Arepa con Queso",
+      "categoria": "Desayuno",
+      "descripcion": "Arepa antioqueña con queso campesino.",
+      "precio": 8000,
+      "imagen": "https://example.com/arepa.jpg",
+      "disponible": true,
+      "id": "8BiL9w_aTR8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
